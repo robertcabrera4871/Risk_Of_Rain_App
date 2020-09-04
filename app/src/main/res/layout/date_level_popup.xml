@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popupWindowLayout"
+    android:layout_width="275dp"
+    android:layout_height="wrap_content"
+    android:background="#FCF7F7"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:background="@android:drawable/btn_dialog"
+        android:onClick="closePopup" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="93dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/riskofrainfont"
+            android:gravity="center"
+            android:text="Enter \n Level:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/LevelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/form_textview_border"
+            android:fontFamily="@font/riskofrainfont"
+            android:gravity="center"
+            android:text="Level"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/riskofrainfont"
+            android:gravity="center"
+            android:text="Enter \n Date"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/DateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/form_textview_border"
+            android:fontFamily="@font/riskofrainfont"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/finishEditButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@android:drawable/checkbox_on_background" />
+
+</LinearLayout>

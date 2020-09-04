@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pickCharLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pickCharacterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/riskofrainfont"
+        android:gravity="center_horizontal"
+        android:text="Pick a Character"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/characterScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/characterScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="37dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pastRunsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickCharacterTitle">
+
+        <LinearLayout
+            android:id="@+id/characterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/commandoSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/commando" />
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="COMMANDO"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/huntressSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/huntress" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="HUNTRESS"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/multSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/mult" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="MUL-T"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/engineerSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/engineer" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="ENGINEER"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/artificerSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/artificer" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="ARTIFICER"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/mercSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/mercenary" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="MERCENARY"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/rexSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/rex" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="REX"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/loaderSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/loader" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="LOADER"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/acridSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80E1DFDF"
+                android:onClick="toItemSelect"
+                android:orientation="horizontal">>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/acrid" />
+
+                <TextView
+                    android:layout_width="227dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/riskofrainfont"
+                    android:gravity="center"
+                    android:text="ACRID"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pastRunsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/riskofrainfont"
+        android:onClick="toPastRuns"
+        android:text="Past Runs"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterScrollView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

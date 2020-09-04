@@ -1,0 +1,2 @@
+rootProject.name='ROR2 Companion'
+include ':app'

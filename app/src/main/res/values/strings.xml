@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ROR2 Companion</string>
+    <string name="commando">Commando</string>
+    <string name="huntress">Huntress</string>
+    <string name="mult">Mul-T</string>
+    <string name="engineer">Engineer</string>
+    <string name="artificer">Artificer</string>
+    <string name="mercenary">Mercenary</string>
+    <string name="rex">Rex</string>
+    <string name="loader">Loader</string>
+    <string name="acrid">Acrid</string>
+    <string name="stat_data_string">Character: Commando \n Date: 5/6/2020 \n Level: 5 \n\n Movement Speed \n\n\n Damage \n\n\n Health \n\n\n Health Regen \n\n</string>
+</resources>
