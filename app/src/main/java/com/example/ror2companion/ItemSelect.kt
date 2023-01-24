@@ -36,7 +36,7 @@ class ItemSelect: AppCompatActivity() {
         }
         addAdapter()
         isAttached = true
-        chosenCharacter = intent.getStringExtra("charChosen")
+        chosenCharacter = intent.getStringExtra("charChosen")!!
         createdRun = Run(chosenCharacter, itemsChosenArray)
     }
     override fun onStart() {
